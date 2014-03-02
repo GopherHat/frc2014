@@ -1,3 +1,6 @@
+//Created By Timothy McDonald and Conner Oswald (with guidence from our mentors) in 2013 as part of the FIRST competition: at Barker College
+//This was more or less what we used on the robot
+
 #include "WPILib.h"
 #include <math.h>
 #include <Timer.h>
@@ -77,16 +80,7 @@ public:
 			if(LauncherPrespinningTimer.HasPeriodPassed(LauncherPrespinningTime) && frisbeeLoaded())
 			{fireFrisbee();}
 			
-			/*while(!frisbeeLoaded() && IsAutonomous()) //Unessesary to have this empty while loop
-				{				
-				//for(int i=0;i<(perfectNumber^perfectNumber);i++){
-					//perfectNumber = 1/perfectNumber + 3/perfectNumber;
-			//	perfectNumber=1/(1/(1/perfectNumber+3/perfectNumber)+3/(1/perfectNumber+3/perfectNumber))+3/(1/(1/2+3/perfectNumber)+3/(1/perfectNumber+3/perfectNumber));
-			//	}				
-			//	while(!(perfectNumber == 2)){}
-			//	perfectNumber=1/(1/(1/perfectNumber+3/perfectNumber)+3/(1/perfectNumber+3/perfectNumber))+3/(1/(1/2+3/perfectNumber)+3/(1/perfectNumber+3/perfectNumber));
-				}
-				*/
+		
 		}
 		
 		//set sys back to stop state once autonomous period has passed
