@@ -76,17 +76,6 @@ public:
 			//printf("time %f \n",AutonomousTimer.Get()); //all printf statements are for debug purpose
 			if(LauncherPrespinningTimer.HasPeriodPassed(LauncherPrespinningTime) && frisbeeLoaded())
 			{fireFrisbee();}
-			
-			/*while(!frisbeeLoaded() && IsAutonomous()) //Unessesary to have this empty while loop
-				{				
-				//for(int i=0;i<(perfectNumber^perfectNumber);i++){
-					//perfectNumber = 1/perfectNumber + 3/perfectNumber;
-			//	perfectNumber=1/(1/(1/perfectNumber+3/perfectNumber)+3/(1/perfectNumber+3/perfectNumber))+3/(1/(1/2+3/perfectNumber)+3/(1/perfectNumber+3/perfectNumber));
-			//	}				
-			//	while(!(perfectNumber == 2)){}
-			//	perfectNumber=1/(1/(1/perfectNumber+3/perfectNumber)+3/(1/perfectNumber+3/perfectNumber))+3/(1/(1/2+3/perfectNumber)+3/(1/perfectNumber+3/perfectNumber));
-				}
-				*/
 		}
 		
 		//set sys back to stop state once autonomous period has passed
